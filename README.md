@@ -8,7 +8,6 @@ https://www.serverless.com/framework/docs/getting-started/
 
 ## Create project
 
-
 ```
 $ sls create --template aws-nodejs --path myService
 ```
@@ -23,6 +22,12 @@ https://www.serverless.com/framework/docs/providers/aws/examples/hello-world/nod
 $ sls deploy
 ```
 
+As follows, other stages can be deployed.
+
+```
+$ sls deploy -s stage
+```
+
 ## Invoke
 
 ```
@@ -34,8 +39,6 @@ $ sls invoke -f hello
 ```
 
 ## Run locally
-
-
 
 ### install
 
@@ -78,4 +81,10 @@ offline: Function names exposed for local invocation by aws-sdk:
 $ aws lambda invoke /dev/null \
   --endpoint-url http://localhost:3002 \
   --function-name myservice-dev-hello
+```
+
+### Remove
+
+```
+$ sls remove
 ```
