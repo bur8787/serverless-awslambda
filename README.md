@@ -54,7 +54,9 @@ plugins:
   - serverless-offline
 ```
 
-### Run - just once
+### Run
+
+#### Run - just once
 
 ```
 $ sls invoke local -f hello
